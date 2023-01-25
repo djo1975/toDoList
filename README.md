@@ -85,7 +85,7 @@ To clone this repository to your desired folder, follow the steps below:
 
 ```sh
   cd my-folder
-  git clone https://github.com/Timbar09/Awesome-Books.git
+  git clone https://github.com/Timbar09/Awesome-Books.git](https://github.com/djo1975/Webpack.git
 ```
 
 **Using GitHub Desktop app**
