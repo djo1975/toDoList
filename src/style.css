@@ -1,4 +1,91 @@
-.hello {
-    color: red;
-  }
-  
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.to-do-list {
+  background-color: #f7f7f7;
+  padding: 20px;
+  border-radius: 5px;
+  width: 400px;
+  box-shadow: 2px 2px 10px #ccc;
+  text-align: center;
+}
+
+.title {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.refresh {
+  cursor: pointer;
+  float: right;
+  margin-top: -40px;
+}
+
+.line {
+  margin: 10px 0;
+  border: none;
+  border-top: 1px solid #ccc;
+}
+
+.input {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.add-btn {
+  position: relative;
+  cursor: pointer;
+  float: right;
+  margin-top: -40px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.container2 li {
+  display: flex;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 10px;
+  box-shadow: 2px 2px 10px #ccc;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.div {
+  rotate: 90deg;
+}
+
+.complete-btn {
+  background-color: #0093ff;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-top: 10px;
+  cursor: pointer;
+  width: 100%;
+  border: none;
+}
+
+.complete-btn:hover {
+  background-color: #007bff;
+}
