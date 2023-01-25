@@ -25,9 +25,9 @@
 - [🙏 Acknowledgements](#acknowledgements)
 - [📝 License](#license)
 
-# 📖 Awesome Books <a name="about-project"></a>
+# 📖 To-Do-List <a name="about-project"></a>
 
-**Awesome Books** is a simple website that displays a list of task to do.
+** To-Do-List** is a simple website that displays a list of task to do.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -92,7 +92,7 @@ To clone this repository to your desired folder, follow the steps below:
 
 - Follow the steps below
 
-  - Visit this link "https://github.com/djo1975/Webpack"
+  - Visit this link "https://github.com/djo1975/Webpack.git"
   - Click the green button labelled "code"
   - Select the "Open with GitHub Desktop" option
   - After the GitHub Desktop add opens, click the "clone repo" button
