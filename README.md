@@ -2,7 +2,7 @@
 
 <div>
 
-  <h1><b>To do list</b></h1><br/><br/>
+  <h1><b>To Do list: add & remove</b></h1><br/><br/>
 
 </div>
 
@@ -25,9 +25,10 @@
 - [🙏 Acknowledgements](#acknowledgements)
 - [📝 License](#license)
 
-# 📖 To-Do-List <a name="about-project"></a>
+# 📖 To Do list: add & remove <a name="about-project"></a>
 
-** To-Do-List** In this project, you will build a simple HTML list of To Do tasks. The list will be styled according to the specifications listed later in this lesson. This simple web page will be built using webpack and served by a webpack dev server.
+** To Do list: add & remove** In this project, you will implement the CRUD (create, read, update, delete) methods. All the elements of the user interface will be fully functional and your application will be completed.
+
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
@@ -84,7 +85,7 @@ To clone this repository to your desired folder, follow the steps below:
 
 ```sh
   cd my-folder
-  git clone https://github.com/Timbar09/Awesome-Books.git](https://github.com/djo1975/Webpack.git
+  git clone https://github.com/djo1975/Webpack.git
 ```
 
 **Using GitHub Desktop app**
