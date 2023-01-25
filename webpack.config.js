@@ -1,38 +1,26 @@
 const path = require('path');
- const HtmlWebpackPlugin = require('html-webpack-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin'); // eslint-disable-line import/no-unresolved
 
- module.exports = {
-   mode: 'development',
-   entry: {
-     index: './src/index.js',
-     print: './src/print.js',
-   },
-   module: {
+module.exports = {
+  module: {
     rules: [
       {
         test: /\.css$/,
-        use: [
-          'style-loader',
-          'css-loader'
-        ]
-      }
-    ]
+        use: ['style-loader', 'css-loader'],
+      },
+      {
+        test: /\.scss$/,
+        use: ['style-loader', 'css-loader', 'sass-loader'],
+      },
+    ],
   },
-   devtool: 'inline-source-map',
+  plugins: [
+    new HtmlWebpackPlugin({
+      template: path.resolve(__dirname, 'src', 'index.html'),
+    }),
+  ],
   devServer: {
-    open: true,
+    historyApiFallback: true,
   },
-   plugins: [
-     new HtmlWebpackPlugin({
-       title: 'Development',
-     }),
-   ],
-   output: {
-     filename: '[name].bundle.js',
-     path: path.resolve(__dirname, 'dist'),
-     clean: true,
-   },
-  optimization: {
-    runtimeChunk: 'single',
-  },
- };
+  mode: 'production',
+};
