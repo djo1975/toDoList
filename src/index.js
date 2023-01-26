@@ -1,9 +1,11 @@
 import './style.css';
+// eslint-disable-next-line import/no-cycle
 import { toggleTaskStatus } from './status.js';
 
 const taskList = document.querySelector('.container2');
 
 // Initialize tasks array
+// eslint-disable-next-line import/prefer-default-export, import/no-mutable-exports
 export let tasks = JSON.parse(localStorage.getItem('tasks')) || [];
 
 // Function to add a new task
@@ -53,10 +55,10 @@ const populateList = () => {
         }
       });
       checkbox.addEventListener('change', () => {
-toggleTaskStatus(i);
-populateList();
-});
-      
+        toggleTaskStatus(i);
+        populateList();
+      });
+
       const deleteBtn = document.createElement('button');
       deleteBtn.innerHTML = 'Delete';
       deleteBtn.addEventListener('click', () => {
@@ -75,11 +77,11 @@ populateList();
 document.addEventListener('DOMContentLoaded', () => {
   populateList();
   const clearCompleted = document.querySelector('.complete-btn');
-clearCompleted.addEventListener('click', () => {
+  clearCompleted.addEventListener('click', () => {
     tasks = tasks.filter((task) => !task.completed);
     localStorage.setItem('tasks', JSON.stringify(tasks));
     populateList();
-});
+  });
 
   // Add event listener for add task button
   const addTaskBtn = document.querySelector('.add-btn');
