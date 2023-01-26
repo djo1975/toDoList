@@ -2,7 +2,7 @@
 
 <div>
 
-  <h1><b>To Do list: add & remove</b></h1><br/><br/>
+  <h1><b>To do list</b></h1><br/><br/>
 
 </div>
 
@@ -25,9 +25,9 @@
 - [🙏 Acknowledgements](#acknowledgements)
 - [📝 License](#license)
 
-# 📖 To Do list: add & remove <a name="about-project"></a>
+# 📖 Awesome Books <a name="about-project"></a>
 
-** To Do list: add & remove** In this project, you will implement the CRUD (create, read, update, delete) methods. All the elements of the user interface will be fully functional and your application will be completed.
+**Awesome Books** is a simple website that displays a list of task to do.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -85,14 +85,14 @@ To clone this repository to your desired folder, follow the steps below:
 
 ```sh
   cd my-folder
-  git clone https://github.com/djo1975/Webpack.git
+  git clone https://github.com/Timbar09/Awesome-Books.git
 ```
 
 **Using GitHub Desktop app**
 
 - Follow the steps below
 
-  - Visit this link "https://github.com/djo1975/Webpack.git"
+  - Visit this link "https://github.com/djo1975/Webpack"
   - Click the green button labelled "code"
   - Select the "Open with GitHub Desktop" option
   - After the GitHub Desktop add opens, click the "clone repo" button

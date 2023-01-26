@@ -1,9 +1,10 @@
 import './style.css';
+import { toggleTaskStatus } from './status.js';
 
 const taskList = document.querySelector('.container2');
 
 // Initialize tasks array
-let tasks = JSON.parse(localStorage.getItem('tasks')) || [];
+export let tasks = JSON.parse(localStorage.getItem('tasks')) || [];
 
 // Function to add a new task
 const addTask = (description) => {
@@ -38,6 +39,7 @@ const populateList = () => {
       const listItem = document.createElement('li');
       const checkbox = document.createElement('input');
       checkbox.setAttribute('type', 'checkbox');
+      checkbox.checked = tasks[i].completed;
       const taskDescription = document.createElement('span');
       taskDescription.innerHTML = task.description;
       const taskActions = document.createElement('div');
@@ -50,6 +52,11 @@ const populateList = () => {
           populateList();
         }
       });
+      checkbox.addEventListener('change', () => {
+toggleTaskStatus(i);
+populateList();
+});
+      
       const deleteBtn = document.createElement('button');
       deleteBtn.innerHTML = 'Delete';
       deleteBtn.addEventListener('click', () => {
@@ -67,6 +74,13 @@ const populateList = () => {
 
 document.addEventListener('DOMContentLoaded', () => {
   populateList();
+  const clearCompleted = document.querySelector('.complete-btn');
+clearCompleted.addEventListener('click', () => {
+    tasks = tasks.filter((task) => !task.completed);
+    localStorage.setItem('tasks', JSON.stringify(tasks));
+    populateList();
+});
+
   // Add event listener for add task button
   const addTaskBtn = document.querySelector('.add-btn');
   addTaskBtn.addEventListener('click', () => {
