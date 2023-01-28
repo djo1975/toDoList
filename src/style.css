@@ -71,6 +71,41 @@ ul {
   justify-content: space-between;
 }
 
+.input-text {
+  text-decoration: none;
+}
+
+.list-line {
+  border: 0;
+  width: 100%;
+  background-color: gray;
+  height: 1px;
+  margin-left: 0;
+  margin-bottom: 0;
+}
+
+.task {
+  display: flex;
+  width: 99%;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1%;
+}
+
+.task-text {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.task-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
 .div {
   rotate: 90deg;
 }
